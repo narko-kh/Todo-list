@@ -2,11 +2,14 @@
   "name": "react-ts",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://narko-kh.github.io/narko-kh/Todo-list",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.4.0",
@@ -21,6 +24,7 @@
     "@types/react": "^18.0.28",
     "@types/react-dom": "^18.0.11",
     "@vitejs/plugin-react": "^4.7.0",
+    "gh-pages": "^6.3.0",
     "typescript": "^4.9.3",
     "vite": "^7.0.6"
   }
